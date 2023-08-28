@@ -51,21 +51,24 @@ Project Organization
 
 --------
 
-How to run inference up locally:
+### How to run inference app locally:
 1. Install Python
-2. In CMD: pip install poetry
-3. poetry install (it will automatically install all the dependencies from lock file)
-4. poetry shell
-5. uvicorn app:app  --port 8000 --reload
-6. From localhost:8000 move to localhost:8000/docs
-7. Try it :)
+2. In CMD: 
+    - pip install poetry
+    - poetry install (it will automatically install all the dependencies from lock file)
+    - poetry shell
+    - uvicorn app:app  --port 8000 --reload
+3. From localhost:8000 move to localhost:8000/docs
+4. Try it :)
 
-How to run inference as a container:
+
+### How to run inference app with Docker:
 1. Install Docker
-2. In cmd: docker build -t text_classification_app .
-3. docker run -p 8000:80 text_classification_app
-4. From localhost:8000 move to localhost:8000/docs
-5. Try it :)
+2. In cmd: 
+    - docker build -t text_classification_app .
+    - docker run -p 8000:80 text_classification_app
+3. From localhost:8000 move to localhost:8000/docs
+4. Try it :)
 
 ## What else could be used/improved:
 ### Data Science track:
